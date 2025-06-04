@@ -4,6 +4,7 @@ import importlib
 topics = {
     "1": ("Summation", "summation.controller"),
     "3": ("linearity", "linearity.controller"),
+    "4": ("Finite_sum", "Finite_sum.controller"),
     # Add more topics if needed
 }
 
