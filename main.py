@@ -3,6 +3,7 @@ import importlib
 
 topics = {
     "1": ("Summation", "summation.controller"),
+    "3": ("linearity", "linearity.controller"),
     # Add more topics if needed
 }
 
