@@ -7,6 +7,7 @@ topics = {
     "4": ("Finite_sum", "Finite_sum.controller"),
     "5": ("Infinite_sum", "Infinite_sum.controller"),
     "6": ("Arithmetic_Series", "Arithmetic_Series.controller"),
+    "7": ("Geometric_Series", "Geometric_Series.controller"),
     # Add more topics if needed
 }
 
