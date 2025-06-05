@@ -11,6 +11,7 @@ topics = {
     "8": ("Convergence_of_Series", "Convergence_of_Series.controller"),
     "9": ("Divergence_of_Series", "Divergence_of_Series.controller"),
     "10": ("Taylor_Series", "Taylor_Series.controller"),
+    "11": ("Maclaurin_Series", "Maclaurin_Series.controller"),
     # Add more topics if needed
 }
 

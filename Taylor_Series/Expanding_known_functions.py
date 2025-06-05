@@ -29,11 +29,15 @@ def generate_taylor_question(level):
     taylor_expansion = series(func_expr, x, a, n).removeO()
 
     template = random.choice(QUESTION_TEMPLATES)
-    question = template.format(func_name, a, n)
-    question += "\n\n$$\n" + f"{func_name} \\approx " + latex(taylor_expansion) + "\n$$"
+
+    # Adjust argument order for templates that start with degree first
+    if "degree-{}" in template:
+        question = template.format(n, func_name, a)
+    else:
+        question = template.format(func_name, a, n)
 
     answer = f"**Answer:**\n\nThe Taylor expansion is:\n\n"
-    answer += "$$\n" + latex(taylor_expansion) + "\n$$"
+    answer += "$$\n" + f"{func_name} \\approx " + latex(taylor_expansion) + "\n$$"
 
     return {"question": question, "answer": answer}
 

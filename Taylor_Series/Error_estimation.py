@@ -24,11 +24,11 @@ def taylor_remainder(f, a, n, x_val):
     return error_bound
 
 QUESTION_TEMPLATES = [
-    "Estimate the error of approximating ${}$ using its Taylor polynomial of degree {} at $x = {}$ centered at $x = {}$.",
-    "Find the Lagrange remainder for the Taylor approximation of ${}$ at $x = {}$, degree {}, about $x = {}$.",
-    "What is the error bound when approximating ${}$ by its degree {} Taylor polynomial centered at $x = {}$ evaluated at $x = {}$?",
-    "Determine the maximum error when using a Taylor polynomial of degree {} for ${}$ centered at $x = {}$ at $x = {}$.",
-    "Compute the error estimate of ${}$ using Taylor expansion up to degree {} around $x = {}$, evaluated at $x = {}$."
+    "A function ${}$ is approximated using a Taylor polynomial of degree {} centered at $x = {}$. Evaluate the possible error when estimating the value at $x = {}$.",
+    "Using a Taylor polynomial of degree {} centered at $x = {}$ for ${}$, what is the maximum error that may occur at $x = {}$?",
+    "Given a degree {} Taylor approximation of ${}$ about $x = {}$, determine the bound on the error when $x = {}$.",
+    "Suppose we use a Taylor expansion of ${}$ around $x = {}$ up to degree {}. What is the error estimate at $x = {}$?",
+    "What is the estimated difference between ${}$ and its degree {} Taylor polynomial centered at $x = {}$ when evaluated at $x = {}$?"
 ]
 
 def generate_taylor_error_question(level):
@@ -42,7 +42,7 @@ def generate_taylor_error_question(level):
 
     # Choose a question template
     template = random.choice(QUESTION_TEMPLATES)
-    question = template.format(func_name, n, x_val, a)
+    question = template.format(func_name, n, a, x_val)
     question += "\n\n$$\n" + f"{func_name} \\approx " + latex(taylor_poly) + "\n$$"
 
     answer = f"**Answer:**\n\nThe estimated error bound is approximately:\n\n"
