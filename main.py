@@ -1,8 +1,10 @@
 import os
 import importlib
 
+
 topics = {
     "1": ("Summation", "summation.controller"),
+    "2": ("Summation_Properties", "Summation_Properties.controller"),
     "3": ("linearity", "linearity.controller"),
     "4": ("Finite_sum", "Finite_sum.controller"),
     "5": ("Infinite_sum", "Infinite_sum.controller"),
