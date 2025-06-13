@@ -40,7 +40,7 @@ def main():
         f.write("\n".join(output_lines))
 
 
-    print(f"\n✅ Output written to output.md for topic: {topic_name}")
+    print(f"\n [OK] Output written to output.md for topic: {topic_name}")
 
 if __name__ == "__main__":
     main()
