@@ -1,8 +1,5 @@
 
 from .Divergent_peries import generate as generate_divergent_p
-from .Examples_with_no_finite_sum import generate_divergent_series_questions # Note specific function name
-from .Harmonic_series import generate as generate_harmonic_variants
-from .Tests_for_divergence import generate_divergence_test_questions # Note specific function name
 
 levels = [f"Level {i}" for i in range(1, 8)] # Levels 1 to 7
 
@@ -24,9 +21,6 @@ def generate_all_divergence_questions_controller(level_str: str, total_questions
     # Define the sub-topic generators and their titles
     sub_topic_generators = [
         ("Divergent p-Series (p ≤ 1)", generate_divergent_p),
-        ("General Divergent Series (Term Analysis)", generate_divergent_series_questions), # Calling specific function
-        ("Harmonic Series and its Variants", generate_harmonic_variants),
-        ("Application of the Divergence Test", generate_divergence_test_questions), # Calling specific function
     ]
 
     num_sub_topics = len(sub_topic_generators) # This will be 4

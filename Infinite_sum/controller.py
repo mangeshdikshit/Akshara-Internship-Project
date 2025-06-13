@@ -2,7 +2,6 @@ import random
 from .approximating_sums import get_partial_sums_questions
 from .common_infinite_series import get_convergent_series_questions
 from .convergent_geometric_series import generate_geometric_series
-from .use_of_convergence_tests import generate_convergence_tests
 
 levels = [f"Level {i}" for i in range(1, 8)] # Levels 1 to 7
 
@@ -25,7 +24,6 @@ def generate_all_mixed_questions(level_str: str, total_questions: int):
         ("Approximating Sums Using Partial Sums", get_partial_sums_questions),
         ("Evaluating Convergent Geometric and Harmonic Series", get_convergent_series_questions),
         ("Advanced Geometric Series Evaluation", generate_geometric_series),
-        ("Basic Convergence Tests", generate_convergence_tests),
     ]
 
     num_sub_topics = len(sub_topic_generators)
