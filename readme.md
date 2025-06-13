@@ -1,4 +1,4 @@
-# Mathematical Question Generator
+# Auto Question Generation For Summation
 
 A comprehensive Python-based educational tool that generates mathematical questions and problems across various topics in calculus, series, and mathematical analysis. This project is designed to help students and educators create practice problems with varying difficulty levels.
 
